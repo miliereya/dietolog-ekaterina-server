@@ -25,6 +25,9 @@ router.post('/records/create', recordController.create)
 router.get('/reviews', reviewController.getManyApplied)
 router.post('/reviews/create', reviewController.create)
 
+//Certificates
+router.get('/certificates', certificateController.getMany)
+
 // ---ADMIN QUERIES---
 
 //Login

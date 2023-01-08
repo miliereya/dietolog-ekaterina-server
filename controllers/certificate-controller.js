@@ -13,7 +13,8 @@ class CertificateController {
 
 	async getMany(req, res, next) {
 		try {
-			
+			const certificates = await certificateService.getMany()
+			return res.json(certificates)
 		} catch (e) {
 			next(e)
 		}

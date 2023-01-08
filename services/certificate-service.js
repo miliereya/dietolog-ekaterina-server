@@ -12,7 +12,7 @@ class CertificateService {
 	}
 
 	async getMany() {
-		
+		return await certificateModel.find()
 	}
 
 	async delete() {}
